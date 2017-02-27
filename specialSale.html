@@ -1,0 +1,490 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style>
+		*{margin: 0;padding: 0;}
+			.header input{
+				float: left;
+			 
+				
+			}
+			body{
+				font-size: 14px;
+				color: black;
+				height:1000px;
+				
+			}
+			/*头部*/
+			.header{
+				background-color:#e4e4e8;
+				padding: 10px 0px 10px 10px;
+			    box-shadow: 0px -5px 23px gray;
+			    height: 50px;
+			 
+			    position: fixed;
+			    z-index: 13;
+			
+			}
+			.header h2{
+				font-size: 18px;
+				margin-left: 10%;
+			}
+			/*头部*/
+			/*导航*/
+			.nav{
+				height: 40px;
+		        padding-left: 13%;
+				line-height: 30px;
+				border-bottom: 1px solid gainsboro;
+				padding-top: 5px;
+				margin-top: 50px;
+				position: fixed;
+				width: 100%;
+		      background-color: #efeff4;
+		        z-index: 10;
+		        margin-bottom: 10px;
+		      
+			}
+			.nav li{
+				float: left;
+				list-style-type: none;
+				width: 33%;
+			
+
+			}
+			.nav li .as{
+				color: black;
+			display: inline-block;
+			line-height: 28px;
+				height: 35px;
+	
+	/*border-bottom: 2px solid indianred;*/
+				
+				
+			}
+			.nav li .underline{
+					border-bottom: 2px solid indianred;
+			}
+			/*导航*/
+			/*推荐页面*/
+			.suggest{
+				margin-top: 3%;
+			}
+			.suggest ul li{
+				list-style: none;
+			
+				border: 1px solid gainsboro;
+				float: left;
+			   /* width:116px;*/
+			  width: 31%;
+			    margin-left: 2%;
+			  display: inline-block;
+			  margin-top: 10px;
+			}
+			.suggest img{
+				width: 100%;
+			}
+			.suggest p{
+				color: black;
+				  text-indent: 0.5em;
+			}
+			.suggest span{
+				display: inline-block;
+			   font-size: 13px;
+			}
+			.suggest .colorRed{
+				color:darkred;
+				text-indent: 0.5em;
+			
+			}
+			.suggest .price{
+				color: black;
+				float: right;
+				margin-right: 3%;
+			}
+			.suggest div{
+				margin-bottom: 3%;
+				height: 174px;
+			}
+			/*推荐页面*/
+			
+		/*正在拍页面和今日结拍*/
+		.saleNow .content2,.todaySale .todaySale1{
+			margin: 0px auto;
+			width: 95%;
+			
+		}
+		.saleNow .content2 ul li,.todaySale .todaySale1 ul li{
+			list-style: none;
+	      
+			margin: 10px auto;
+			position: relative;
+		}
+		.saleNow .content2 li .big,.todaySale .todaySale1 li .big{
+			width: 100%;
+		    height: 150px;
+	
+		}
+		.saleNow .content2 li .chujia2,.todaySale .todaySale1 li .chujia2{
+			position: absolute;
+			background-color: whitesmoke;
+			height: 40px;
+			width: 30%;
+			text-align: center;
+			left: 35%;
+			bottom:21%;
+			opacity: 0.7;
+		}			
+		.saleNow .content2 li .chujia2 span, .todaySale .todaySale1 .chujia2 span{
+			display: inline-block;
+			border-top: 1px solid darkgray;
+			
+		}
+		.saleNow .content2 li .ad, .todaySale .todaySale1 li .ad{
+			display: inline-block;
+			color: black;
+			
+		}
+		.saleNow .content2 li .look, .todaySale .todaySale1 li .look{
+			float: right;
+			color: black;
+			display: inline-block;
+	
+		}
+		.saleNow .content2 li .look strong, .todaySale .todaySale1 li .look strong{
+			color: orange;
+		}
+		.saleNow .content2 li .text, .todaySale .todaySale1 li .text{
+		
+			height: 30px;
+			display: inline-block;
+			background-color: gainsboro;
+		}
+		.saleNow .content2 .text, .todaySale .todaySale1 .text{
+			line-height: 32px;
+			width: 100%;
+		    margin-top: -20px;
+		
+		}
+		.saleNow .content2 li .countdown2,.todaySale .todaySale1 li .countdown2{
+			display: inline-block;
+			position: absolute;
+			right: 10px;
+			top: 20px;
+			width: 40%;
+			background-color: chocolate;
+			color: white;
+			border-top-left-radius:15px ;
+			border-bottom-left-radius: 15px;
+			line-height: 30px;
+		
+			
+			
+		}	
+		.saleNow .content2 li .countdown2 img,.todaySale .todaySale1 li .countdown2 img{
+			margin-top: 5px;
+			float: left;
+			margin-left: 3%;
+			border-radius: 15px;
+			margin-right: 2%;
+		}
+		.singlePage{
+			display: none;
+			margin-top: 100px;
+		}	
+		/*正在拍页面和今日结拍*/	
+		</style>
+	</head>
+ 
+	<body>
+		<!--头部-->
+		<div class="header">
+			<a href="index.html"><input type="image" src="imgs/01_index_auction/back.png" alt="back"/></a>
+			<h2>特卖专场</h2>
+		</div>
+		<!--导航-->
+		<div class="nav" >
+		      <ul id="nav">
+		      	<li><a class="as underline" href="#">推荐</a></li>
+		      
+		      	<li><a class="as" href="#">正在特卖</a></li>
+		      	<li><a class="as" href="#">最后疯抢</a></li>
+		      </ul>
+		</div>
+		<!--推荐-->
+		<div class="suggest singlePage" style="display: block;">
+			<!--第一排-->
+			<div class="suggest1">
+			<ul>
+				<li>
+					<a href="">
+						<img src="imgs/01_index/04_hotSale/222.jpg" alt="" />
+						<p>当代法郎彩第...</p>
+						<span class="colorRed">￥1880</span>
+						<span class="price">剩1件</span>
+				</a>
+				</li>
+				<li><a href=""><img src="imgs/01_index/02_slider/shouzhuo_3.JPG" alt="" />
+				    <p>当代法郎彩第...</p>
+						<span class="colorRed">￥1880</span>
+						<span class="price">剩1件</span>
+				</a></li>
+				<li><a href=""><img src="imgs/01_index/02_slider/details_01.jpg" alt="" />
+				    <p>当代法郎彩第...</p>
+						<span class="colorRed">￥1880</span>
+						<span class="price">剩1件</span>
+				</a></li>
+			</ul>
+			</div>
+			
+			<div class="suggest2">
+			<ul>
+				<li>
+					<a href="">
+						<img src="imgs/01_index/04_hotSale/222.jpg" alt="" />
+						<p>当代法郎彩第...</p>
+						<span class="colorRed">￥1880</span>
+						<span class="price">剩1件</span>
+				</a>
+				</li>
+				<li><a href=""><img src="imgs/01_index/02_slider/shouzhuo_3.JPG" alt="" />
+				    <p>当代法郎彩第...</p>
+						<span class="colorRed">￥1880</span>
+						<span class="price">剩1件</span>
+				</a></li>
+				<li><a href=""><img src="imgs/01_index/02_slider/details_01.jpg" alt="" />
+				    <p>当代法郎彩第...</p>
+						<span class="colorRed">￥1880</span>
+						<span class="price">剩1件</span>
+				</a></li>
+			</ul>
+			</div>
+			
+			<div class="suggest3">
+			<ul>
+				<li>
+					<a href="">
+						<img src="imgs/01_index/04_hotSale/222.jpg" alt="" />
+						<p>当代法郎彩第...</p>
+						<span class="colorRed">￥1880</span>
+						<span class="price">剩1件</span>
+				</a>
+				</li>
+				<li><a href=""><img src="imgs/01_index/02_slider/shouzhuo_3.JPG" alt="" />
+				    <p>当代法郎彩第...</p>
+						<span class="colorRed">￥1880</span>
+						<span class="price">剩1件</span>
+				</a></li>
+				<li><a href=""><img src="imgs/01_index/02_slider/details_01.jpg" alt="" />
+				    <p>当代法郎彩第...</p>
+						<span class="colorRed">￥1880</span>
+						<span class="price">剩1件</span>
+				</a></li>
+			</ul>
+			</div>
+			
+			
+		</div>
+		
+		
+		<!--正在特卖-->
+		<div class="saleNow singlePage" >
+			<div class="content2">
+				<ul>
+					<li>
+						<a href="">
+							<img class="big" src="imgs/01_index_auction/index_classify_3.jpg" alt="" />
+							<span class="chujia2" >
+								<img src="imgs/01_index/05_currentSale/paimai.jpg" width="10px"/><br/>
+								<span>
+									共<strong>71</strong>次出价
+								</span>
+								
+							</span>
+							<p class="text">
+								<span class="ad">特 双十二感恩"买"就"送"杯</span>
+							   <span class="look">
+								<strong>7000</strong>次围观
+							   </span>
+							</p>
+							<span class="countdown2">
+					        
+					           <img src="imgs/01_index/05_currentSale/clock.jpg" />
+					              	剩<strong>11</strong>时<strong>11</strong>分钟
+					        </span>
+					         
+							
+					</a>
+					</li>
+					
+						<li>
+						<a href="">
+							<img class="big" src="imgs/01_index_auction/index_classify_3.jpg" alt="" />
+							<span class="chujia2" >
+								<img src="imgs/01_index/05_currentSale/paimai.jpg" width="10px"/><br/>
+								<span>
+									共<strong>71</strong>次出价
+								</span>
+								
+							</span>
+							<p class="text">
+								<span class="ad">特 双十二感恩"买"就"送"杯</span>
+							   <span class="look">
+								<strong>7000</strong>次围观
+							   </span>
+							</p>
+							
+							<span class="countdown2">
+					        
+					           <img src="imgs/01_index/05_currentSale/clock.jpg" />
+					              	剩<strong>11</strong>时<strong>11</strong>分钟
+					        </span>
+					         
+					</a>
+					</li>
+					
+						<li>
+						<a href="">
+							<img class="big" src="imgs/01_index_auction/index_classify_3.jpg" alt="" />
+							<span class="chujia2" >
+								<img src="imgs/01_index/05_currentSale/paimai.jpg" width="10px"/><br/>
+								<span>
+									共<strong>71</strong>次出价
+								</span>
+								
+							</span>
+							<p class="text">
+								<span class="ad">特 双十二感恩"买"就"送"杯</span>
+							   <span class="look">
+								<strong>7000</strong>次围观
+							   </span>
+							</p>
+						
+							<span class="countdown2">
+					        
+					           <img src="imgs/01_index/05_currentSale/clock.jpg" />
+					              	剩<strong>11</strong>时<strong>11</strong>分钟
+					        </span>
+					</a>
+					</li>
+					
+				</ul>
+				
+			</div>
+		</div>
+		
+		<!--最后疯抢-->
+		<div class="todaySale singlePage" >
+			<div class="todaySale1">
+				<ul>
+					<li>
+						<a href="">
+							<img class="big" src="imgs/01_index_auction/11.jpg" alt="" />
+							<span class="chujia2" >
+								<img src="imgs/01_index/05_currentSale/paimai.jpg" width="10px"/><br/>
+								<span>
+									共<strong>71</strong>次出价
+								</span>
+								
+							</span>
+							<p class="text">
+								<span class="ad">特 钧瓷大师茶器专场</span>
+							   <span class="look">
+								<strong>7000</strong>次围观
+							   </span>
+							</p>
+							<span class="countdown2">
+					        
+					           <img src="imgs/01_index/05_currentSale/clock.jpg" />
+					              	剩<strong>11</strong>时<strong>11</strong>分钟
+					        </span>
+					         
+							
+					</a>
+					</li>
+					
+						<li>
+						<a href="">
+							<img class="big" src="imgs/01_index_auction/11.jpg" alt="" />
+							<span class="chujia2" >
+								<img src="imgs/01_index/05_currentSale/paimai.jpg" width="10px"/><br/>
+								<span>
+									共<strong>71</strong>次出价
+								</span>
+								
+							</span>
+							<p class="text">
+								<span class="ad">特 钧瓷大师茶器专场</span>
+							   <span class="look">
+								<strong>7000</strong>次围观
+							   </span>
+							</p>
+							
+							<span class="countdown2">
+					        
+					           <img src="imgs/01_index/05_currentSale/clock.jpg" />
+					              	剩<strong>11</strong>时<strong>11</strong>分钟
+					        </span>
+					         
+					</a>
+					</li>
+					
+						<li>
+						<a href="">
+							<img class="big" src="imgs/01_index_auction/11.jpg" alt="" />
+							<span class="chujia2" >
+								<img src="imgs/01_index/05_currentSale/paimai.jpg" width="10px"/><br/>
+								<span>
+									共<strong>71</strong>次出价
+								</span>
+								
+							</span>
+							<p class="text">
+								<span class="ad">特 钧瓷大师茶器专场</span>
+							   <span class="look">
+								<strong>7000</strong>次围观
+							   </span>
+							</p>
+						
+							<span class="countdown2">
+					        
+					           <img src="imgs/01_index/05_currentSale/clock.jpg" />
+					              	剩<strong>11</strong>时<strong>11</strong>分钟
+					        </span>
+					</a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<script src="js/animatef.js"></script>
+		<script>
+			var nav=document.getElementById('nav');
+			var singlePages=document.getElementsByClassName('singlePage');
+			var lis=nav.children;
+	        var as=document.getElementsByClassName('as')
+			for(var i=0,len=lis.length; i<len; i++)
+			{
+				lis[i].index=i;
+				lis[i].onclick=function(){
+					for(var j=0; j<len; j++){
+						singlePages[j].style.display="none"
+						as[j].className="as"
+					}
+					singlePages[this.index].style.display="block";
+					as[this.index].className="as underline"
+				}
+			}
+		</script>
+	</body>
+
+</html>

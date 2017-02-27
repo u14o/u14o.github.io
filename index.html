@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--自定义的css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--mui自身的css-->
+		<link rel="stylesheet" href="css/mui.css" />
+		<!--App自定义的css-->
+	<!--	<link rel="stylesheet" type="text/css" href="css/app.css" />-->
+		
+	</head>
+
+	<body>
+       <!-- index.html页面为单页面应用程序-->
+		<div class="mui-content">
+			<!--1.首页页面-->
+			<div id="tabbar" class="mui-control-content mui-active">
+				<!--头部-->
+				<div class="header">
+					<a class="list" href="javascript:;"></a>
+					<form>
+						<span class="bg_search"></span>
+						<input type="text" placeholder="搜索商品" />
+					</form>
+					<a class="shopCart" href="#" style="color: white;"></a>
+				</div>
+				<!--轮播图-->
+				<div class="mui-slider">
+					<div class="mui-slider-group mui-slider-loop">
+						<div class="mui-slider-item mui-slider-item-dulplicate">
+							<a href="javascript:;"><img src="imgs/01_index/02_slider/shouzhuo_3.JPG"></a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="javascript:;">
+								<img src="imgs/01_index/02_slider/details_01.jpg" />
+							</a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="javascript:;">
+								<img src="imgs/01_index/02_slider/index_classify_3.jpg" />
+							</a>
+						</div>
+						<div class="mui-slider-item">
+							<img src="imgs/01_index/02_slider/qingbaimei_1.JPG" />
+						</div>
+						<div class="mui-slider-item">
+							<a href="javascript:;">
+								<img src="imgs/01_index/02_slider/shouzhuo_3.JPG" />
+							</a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="javascript:;">
+								<img src="imgs/01_index/02_slider/index_classify_3.jpg" />
+							</a>
+						</div>
+						<div class="mui-slider-item mui-slider-item-dulplicate">
+							<a href="javascript:;">
+								<img src="imgs/01_index/02_slider/details_01.jpg" />
+							</a>
+						</div>
+					</div>
+					<div class="mui-slider-indicator">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+					</div>
+				</div>
+
+				<div class="sale">
+					<ul>
+						<li>
+							<a href="auction.html"><img src="imgs/01_index/03_saleList/paimai.jpg" alt="拍卖" /><br/>拍卖</a>
+						</li>
+						<li>
+							<a href="specialSale.html"><img src="imgs/01_index/03_saleList/temai.jpg" alt="特卖" /><br/>特卖</a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/03_saleList/yuzhan.jpg" alt="预展" /><br/>预展</a>
+						</li>
+						<li>
+							<a href="javascript:;"><img class="fl" src="imgs/01_index/03_saleList/fuli.jpg" alt="新人福利" /><br/>新人福利</a>
+						</li>
+					</ul>
+				</div>
+				<header class="reimai-h3">
+					<h3>—当前最热拍卖 —</h3>
+				</header>
+				<div class="remai">
+
+					<ul>
+						<li>
+							<a href="buy.html"><img src="imgs/01_index/04_hotSale/1.jpg" alt="" />
+								<p>收藏级宋代老盏 金...</p><span class="price">￥1801</span> <span class="num">19次出价</span></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/04_hotSale/11.jpg" alt="" />
+								<p>龙窑柴烧异变量 斑...</p><span class="price">￥1201</span> <span class="num">15次出价</span></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/04_hotSale/111.jpg" alt="" />
+								<p>昌化鸡血石印 石... </p><span class="price">￥1931</span> <span class="num">13次出价</span></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/04_hotSale/2.jpg" alt="" />
+								<p>龙窑柴烧异变量 斑...</p><span class="price">￥1201</span> <span class="num">15次出价</span></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/04_hotSale/22.jpg" alt="" />
+								<p>龙窑柴烧异变量 斑...</p><span class="price">￥1201</span> <span class="num">15次出价</span></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/04_hotSale/22.jpg" alt="" />
+								<p>龙窑柴烧异变量 斑...</p><span class="price">￥1201</span> <span class="num">15次出价</span></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/04_hotSale/22.jpg" alt="" />
+								<p>龙窑柴烧异变量 斑...</p><span class="price">￥1201</span> <span class="num">15次出价</span></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/04_hotSale/22.jpg" alt="" />
+								<p>龙窑柴烧异变量 斑...</p><span class="price">￥1201</span> <span class="num">15次出价</span></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/04_hotSale/22.jpg" alt="" />
+								<p>龙窑柴烧异变量 斑...</p><span class="price">￥1201</span> <span class="num">15次出价</span></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/04_hotSale/22.jpg" alt="" />
+								<p>龙窑柴烧异变量 斑...</p><span class="price">￥1201</span> <span class="num">15次出价</span></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/04_hotSale/22.jpg" alt="" />
+								<p>龙窑柴烧异变量 斑...</p><span class="price">￥1201</span> <span class="num">15次出价</span></a>
+						</li>
+					</ul>
+				</div>
+				<div class="zaimai">
+					<div class="zaimai-zll">
+						<header>
+							<h3>—正在拍卖 —</h3>
+						</header>
+						<div class="zulanli">
+							<a href="javascript:;"><img src="imgs/01_index/05_currentSale/qingbaimei_1.JPG" alt="" /></a>
+							<time id="timeOver" ></time>
+							<a class="chujia" href="javascript:;">
+								<img style="width: 10px;height: 10px;" src="imgs/01_index/05_currentSale/paimai.jpg" alt="拍卖" />
+								<span>
+	    		       共<strong style="color: blueviolet;">117</strong>次出价
+	    		   </span>
+							</a>
+							<div class="zulanli-text">
+								石来运好 精品战国红 抢拍
+								<span class="liulan">7747次围观</span>
+
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="zaimai-nav">
+					<ul>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/05_currentSale/1.jpg" alt="" />
+								<p>当前最高价
+									<p><span>899.0</span></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/05_currentSale/11.jpg" alt="" />
+								<p>当前最高价
+									<p><span>599.0</span></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/05_currentSale/3.jpg" alt="" />
+								<p>当前最高价
+									<p><span>699.0</span></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/05_currentSale/chabei_2.JPG" alt="" />
+								<p>当前最高价
+									<p><span>899.0</span></a>
+
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/05_currentSale/1.jpg" alt="" />
+								<p>当前最高价
+									<p><span>899.0</span></a>
+
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/05_currentSale/1.jpg" alt="" />
+								<p>当前最高价
+									<p><span>899.0</span></a>
+
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/05_currentSale/1.jpg" alt="" />
+								<p>当前最高价
+									<p><span>899.0</span></a>
+
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/05_currentSale/1.jpg" alt="" />
+								<p>当前最高价
+									<p><span>899.0</span></a>
+
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/05_currentSale/1.jpg" alt="" />
+								<p>当前最高价
+									<p><span>899.0</span></a>
+
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/05_currentSale/1.jpg" alt="" />
+								<p>当前最高价
+									<p><span>899.0</span></a>
+
+						</li>
+						<li>
+							<a href="javascript:;"><img src="imgs/01_index/05_currentSale/1.jpg" alt="" />
+								<p>当前最高价
+									<p><span>899.0</span></a>
+
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<!--2.商城页面-->
+			<div id="tabbar-with-shop" class="mui-control-content">
+
+				<div class="head">
+					<input class="shop-search" type="search" placeholder="搜索商品" />
+					<span><img src="imgs/01_index/01_header/shop.png" width="35px"/><br/></span>
+				</div>
+				<div class="mui-slider">
+					<div class="mui-slider-group mui-slider-loop">
+						<div class="mui-slider-item mui-slider-item-dulplicate">
+							<a href="javascript:;"><img src="imgs/01_index/02_slider/shouzhuo_3.JPG"></a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="javascript:;">
+								<img src="imgs/01_index/02_slider/details_01.jpg" />
+							</a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="javascript:;">
+								<img src="imgs/01_index/02_slider/index_classify_3.jpg" />
+							</a>
+						</div>
+						<div class="mui-slider-item">
+							<img src="imgs/01_index/02_slider/qingbaimei_1.JPG" />
+						</div>
+						<div class="mui-slider-item">
+							<a href="javascript:;">
+								<img src="imgs/01_index/02_slider/shouzhuo_3.JPG" />
+							</a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="javascript:;">
+								<img src="imgs/01_index/02_slider/index_classify_3.jpg" />
+							</a>
+						</div>
+						<div class="mui-slider-item mui-slider-item-dulplicate">
+							<a href="javascript:;">
+								<img src="imgs/01_index/02_slider/details_01.jpg" />
+							</a>
+						</div>
+					</div>
+					<div class="mui-slider-indicator">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+					</div>
+				</div>
+				<div class="saleList">
+					<ul>
+						<li>
+							<a href=""><img src="imgs/04_shop/jewellery.png" alt="" /><br/>玉翠珠宝</a>
+						</li>
+						<li>
+							<a href=""><img src="imgs/04_shop/handCraft.png" alt="" /><br/>手工艺品</a>
+						</li>
+						<li>
+							<a href=""><img src="imgs/04_shop/collect.png" alt="" /><br/>文玩收藏</a>
+						</li>
+						<li>
+							<a href=""><img src="imgs/04_shop/purple.png" alt="" /><br/>紫砂陶瓷</a>
+						</li>
+						<li>
+							<a href=""><img src="imgs/04_shop/draw.png" alt="" /><br/>字画雕塑</a>
+						</li>
+						<li>
+							<a href=""><img src="imgs/04_shop/stone.png" alt="" /><br/>国石奇石</a>
+						</li>
+						<li>
+							<a href=""><img src="imgs/04_shop/tea.png" alt="" /><br/>茶道香道</a>
+						</li>
+						<li>
+							<a href=""><img src="imgs/04_shop/other.png" alt="" /><br/>其他特色</a>
+						</li>
+					</ul>
+				</div>
+				<div class="xinpin_box">
+					<div class="title">
+						<h1 class="mui-pull-left">新品首发</h1>
+						<a class="mui-pull-right">更多></a>
+						<div class="mui-clearfix"></div>
+					</div>
+					<div class="xinpin">
+						<a class="mui-pull-left">
+							<img src="imgs/04_shop/details_01.jpg" style="height: 290px;">
+							<h5>天然玛瑙象棋<br>￥998.0</h5>
+						</a>
+						<a class="mui-pull-left" style="margin-left: 2%; margin-right: 2%; margin-bottom: 10px;">
+							<img src="imgs/04_shop/details_01.jpg">
+							<h5>天然玛瑙象棋<br>￥998.0</h5>
+						</a>
+						<a class="mui-pull-left" style="margin-bottom: 10px;">
+							<img src="imgs/04_shop/details_01.jpg">
+							<h5>天然玛瑙象棋<br>￥998.0</h5>
+						</a>
+						<a class="mui-pull-left" style="margin-left: 2%; margin-right: 2%;">
+							<img src="imgs/04_shop/details_01.jpg">
+							<h5>天然玛瑙象棋<br>￥998.0</h5>
+						</a>
+						<a class="mui-pull-left">
+							<img src="imgs/04_shop/details_01.jpg">
+							<h5>天然玛瑙象棋<br>￥998.0</h5>
+						</a>
+						<div class="mui-clearfix"></div>
+					</div>
+				</div>
+				<div class="artist_box">
+					<div class="title">
+						<h1 class="mui-pull-left">匠人作品</h1>
+						<a class="mui-pull-right">更多></a>
+						<div class="mui-clearfix"></div>
+					</div>
+					<a class="banner"><img src="imgs/04_shop/details_01.jpg"></a>
+					<div class="artist">
+						<a class="mui-pull-left">
+							<img src="imgs/04_shop/details_01.jpg">
+							<h5>龙抬头</h5>
+							<span class="mui-pull-left">￥800</span>
+							<span class="mui-pull-right">剩1件</span>
+							<p><img class="mui-pull-left" src="imgs/04_shop/details_01.jpg"><span class="mui-pull-right">宫崎骏</span></p>
+						</a>
+						<a class="mui-pull-left" style="margin-left: 2%; margin-right: 2%;">
+							<img src="imgs/04_shop/details_01.jpg">
+							<h5>龙抬头</h5>
+							<span class="mui-pull-left">￥800</span>
+							<span class="mui-pull-right">剩1件</span>
+							<p><img class="mui-pull-left" src="imgs/04_shop/details_01.jpg"><span class="mui-pull-right">宫崎骏</span></p>
+						</a>
+						<a class="mui-pull-left">
+							<img src="imgs/04_shop/details_01.jpg">
+							<h5>龙抬头</h5>
+							<span class="mui-pull-left">￥800</span>
+							<span class="mui-pull-right">剩1件</span>
+							<p><img class="mui-pull-left" src="imgs/04_shop/details_01.jpg"><span class="mui-pull-right">宫崎骏</span></p>
+						</a>
+						<a class="mui-pull-left">
+							<img src="imgs/04_shop/details_01.jpg">
+							<h5>龙抬头</h5>
+							<span class="mui-pull-left">￥800</span>
+							<span class="mui-pull-right">剩1件</span>
+							<p><img class="mui-pull-left" src="imgs/04_shop/details_01.jpg"><span class="mui-pull-right">宫崎骏</span></p>
+						</a>
+						<a class="mui-pull-left" style="margin-left: 2%; margin-right: 2%;">
+							<img src="imgs/04_shop/details_01.jpg">
+							<h5>龙抬头</h5>
+							<span class="mui-pull-left">￥800</span>
+							<span class="mui-pull-right">剩1件</span>
+							<p><img class="mui-pull-left" src="imgs/04_shop/details_01.jpg"><span class="mui-pull-right">宫崎骏</span></p>
+						</a>
+						<a class="mui-pull-left">
+							<img src="imgs/04_shop/details_01.jpg">
+							<h5>龙抬头</h5>
+							<span class="mui-pull-left">￥800</span>
+							<span class="mui-pull-right">剩1件</span>
+							<p><img class="mui-pull-left" src="imgs/04_shop/details_01.jpg"><span class="mui-pull-right">宫崎骏</span></p>
+						</a>
+						<div class="mui-clearfix"></div>
+					</div>
+
+				</div>
+			</div>
+			<!--3.发现页面-->
+			<div id="tabbar-with-find" class="mui-control-content">
+				<div class="find-h">发现</div>
+				<div class="find-img"><img src="imgs/01_index/05_currentSale/11.jpg" width="100%" height="100px" />
+				</div>
+				<div class="tuijuan">
+					<span class="tj">推荐</span>
+					<span class="gz">关注</span>
+				</div>
+
+				<div class="recommend" style="display: block;">
+					<div class="recommendMsg1">
+						<div class="msgHead">
+							<img src="imgs/01_index/02_slider/qingbaimei_1.JPG" />
+							<div class="user">
+
+								<h4>集藏斋</h4>
+								<time>
+									<span>11-12</span>
+									<span>19:13</span>
+									<span>美物质</span>
+									<span></span>
+								</time>
+							</div>
+							<span class="follow">+关注</span>
+						</div>
+						<div class="msgImg">
+							<img src="imgs/01_index/02_slider/shouzhuo_3.JPG" />
+							<p>雕刻师其实也是苦逼的设计师</p>
+						</div>
+						<div class="msgStaus">
+							<span>10</span>
+							<span>3</span>
+							<span>3242</span>
+							<span></span>
+						</div>
+					</div>
+
+					<div class="recommendMsg2">
+						<div class="msgHead">
+							<img src="imgs/01_index/02_slider/qingbaimei_1.JPG" />
+							<div class="user">
+
+								<h4>集藏斋</h4>
+								<time>
+									<span>11-12</span>
+									<span>19:13</span>
+									<span>美物质</span>
+									<span></span>
+								</time>
+							</div>
+							<span class="follow">+关注</span>
+						</div>
+						<div class="msgImg">
+							<img src="imgs/01_index/02_slider/index_classify_3.jpg" />
+							<p>雕刻师其实也是苦逼的设计师</p>
+						</div>
+						<div class="msgStaus">
+							<span>10</span>
+							<span>3</span>
+							<span>3242</span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<div class="concern" style="display: none;position: static;">
+					<div class="recommendMsg2">
+						<div class="msgHead">
+							<img src="imgs/01_index/02_slider/qingbaimei_1.JPG" />
+							<div class="user">
+
+								<h4>这是关注页面</h4>
+								<time>
+									<span>11-12</span>
+									<span>19:13</span>
+									<span>美物质</span>
+									<span></span>
+								</time>
+							</div>
+
+						</div>
+						<div class="msgImg">
+							<img src="imgs/01_index/02_slider/index_classify_3.jpg" />
+							<p>雕刻师其实也是苦逼的设计师</p>
+						</div>
+						<div class="msgStaus">
+							<span>10</span>
+							<span>3</span>
+							<span>3242</span>
+							<span></span>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			
+			<!--4.消息页面-->
+			<div id="tabbar-with-message" class="mui-control-content">
+				<div class="msg_header">
+					会话
+				</div>
+				<div class="msg_content">
+					<ul>
+						<li>
+							<a href="javascript:;"><img class="imgLeft" src="imgs/05_message/offcialMsg.png" alt="官方消息" />
+								<span>官方消息</span>
+								<img class="btnR" src="imgs/05_message/btnRight .png" alt="右键" />
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;"><img class="imgLeft" img src="imgs/05_message/fan.png" alt="粉丝" />
+								<span>粉丝</span>
+								<img class="btnR" src="imgs/05_message/btnRight .png" alt="右键" />
+							</a>
+
+						</li>
+						<li>
+							<a href="javascript:;"><img class="imgLeft" img src="imgs/05_message/comment.png" alt="评论" />
+								<span>评论</span>
+								<img class="btnR" src="imgs/05_message/btnRight .png" alt="右键" />
+							</a>
+
+						</li>
+						<li class="noborder">
+							<a href="javascript:;"><img class="imgLeft" src="imgs/05_message/like.png" alt="喜欢" />
+								<span>喜欢</span>
+								<img class="btnR" src="imgs/05_message/btnRight .png" alt="右键" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--5.我的页面-->
+			<div id="tabbar-with-my" class="mui-control-content">
+
+				<header class="mui-bar mui-bar-nav" style="background: #fff;">
+					<h1 style="font-size: 20px; line-height: 44px; text-align: center;">个人中心</h1>
+				</header>
+				<div class="my-head">
+					<div class="setup">
+						<img src="imgs/02_my/guanzhu.png" width="30px" />
+						<img src="imgs/02_my/setUp.png" width="30px" />
+					</div>
+					<div class="person">
+						<img src="imgs/02_my/my.png" width="60px" />
+						<p>忆昔流年</p>
+						<a href="javascript:;"><img src="" alt="">商家入驻</a>
+					</div>
+					<div class="fan">
+						<ul>
+							<li>
+								<a href="javascript:;"><span>0</span>我的关注</a>
+							</li>
+							<li>
+								<a href=""><span>0</span>我的粉丝</a>
+							</li>
+							<li class="noborder">
+								<a href=""><span>0</span>我的喜欢</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="allOrder">
+					<div class="order">
+						<img src="imgs/02_my/allOrder.png" width="30px" />
+						<p>全部订单</p>
+						<img class="btnR" src="imgs/02_my/btnRight .png" />
+					</div>
+					<div class="pay">
+						<ul>
+							<li>
+								<a href="javascript:;"><img src="imgs/02_my/daifk.png" alt="" /><br/>待付款</a>
+							</li>
+							<li>
+								<a href="javascript:;"><img src="imgs/02_my/sendGoods.png" alt="" /><br/>待发货</a>
+							</li>
+							<li>
+								<a href="javascript:;"><img src="imgs/02_my/getGoods.png" alt="" /><br/>待收货</a>
+							</li>
+							<li>
+								<a href="javascript:;"><img src="imgs/02_my/daipj.png" alt="" /><br/>待评价</a>
+							</li>
+							<li>
+								<a href="javascript:;"><img src="imgs/02_my/daipj.png" alt="" /><br/>退款/售后</a>
+							</li>
+						</ul>
+					</div>
+					<div class="bg"></div>
+				</div>
+				<div class="myWallet">
+					<div class="wallet">
+						<img src="imgs/02_my/myWallet.png" width="30px" />
+						<p>我的钱包</p>
+						<img class="btnR" src="imgs/02_my/btnRight .png" style="float: right;" />
+					</div>
+					<div class="accout">
+						<ul>
+							<li>
+								<a href="javascript:;">账户余额<br/>
+									<p>0.00</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">优惠券(张)<br/>
+									<p>0</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">积分<br/>
+									<p>0</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="myshoping">
+						<img src="imgs/02_my/shangchen.png" style="width: 20px;" />
+						<p>我的购物车</p>
+						<img class="btnR" src="imgs/02_my/btnRight .png" />
+					</div>
+					<div class="mysale">
+						<img src="imgs/02_my/auction.png" width="30px" style="float: left;position: absolute;left: 0px" />
+						<p style="position: absolute;left: 7%;">我的拍卖</p>
+						<img class="btnR" src="imgs/02_my/btnRight .png" />
+					</div>
+					<div class="myshoping-bg"></div>
+					<div class="recoder">
+						<img src="imgs/02_my/recorder.png" />
+						<p>我的美物质</p>
+						<img class="btnR" src="imgs/02_my/btnRight .png" />
+					</div>
+					<div class="dongtai">
+						<img src="imgs/02_my/dongtai.png" />
+						<p>我的动态</p>
+						<img class="btnR" src="imgs/02_my/btnRight .png" />
+					</div>
+					<div class="foot">
+						<img src="imgs/02_my/foot.png" />
+						<p>我的足迹</p>
+						<img class="btnR" src="imgs/02_my/btnRight .png" />
+					</div>
+					<div class="address">
+						<img src="imgs/02_my/address.png" style="width: 20px;" />
+						<p>地址管理</p>
+						<img class="btnR" src="imgs/02_my/btnRight .png" />
+					</div>
+					<div class="myshoping-bg"></div>
+					<div class="onlineChat">
+						<img src="imgs/02_my/online.png" style="width: 20px;" />
+						<p>在线客服</p>
+						<img class="btnR" src="imgs/02_my/btnRight .png" />
+					</div>
+					<div class="customerOnline">
+						<img src="imgs/02_my/dialog.png" style="width: 20px;" />
+						<p>客服热线</p>
+						<img class="btnR" src="imgs/02_my/btnRight .png" />
+					</div>
+				</div>
+
+			</div>
+			<!--登录界面-->
+			<!--<div id="tabbar-with-login" class="mui-control-content">
+				<div class="login">
+					<header>
+						<h3>八闽珍品</h3>
+					</header>
+					<form action="#">
+						<label for="txt">账号</label>
+						<input type="text" id="txt" placeholder="请输入账号" autofocus autocomplete/><br />
+						<label for="pwd" class="pwd-label">密码</label>
+						<input type="password" id="pwd" placeholder="请输入密码" autofocus autocomplete/>
+						<input type="submit" value="登陆" id="login" />
+					</form>
+					<div class="register">
+						<a href="javascript:;">注册账号</a>
+						<span>|</span>
+						<a href="javascript:;">忘记密码</a>
+					</div>
+				</div>
+			</div>-->
+		</div>
+		<!--底部  公用的-->
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="#tabbar">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-shop">
+				<span class="mui-icon mui-icon-email"><span class="mui-badge">9</span></span>
+				<span class="mui-tab-label">商城</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-find">
+				<span class="mui-icon mui-icon-search"></span>
+				<span class="mui-tab-label">发现</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-message">
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label">消息</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-my">
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+
+		<script src="js/mui.min.js"></script>
+		<script>
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+
+			mui.init();
+			var gallery = mui('.mui-slider');
+			gallery.slider({
+				interval: 1000 //自动轮播周期，若为0则不自动播放，默认为0；
+			});
+		</script>
+		<script>
+			var endDate = new Date("2016/12/20 15:02");
+			setInterval(fn, 1000);
+
+			function fn() {
+				var date = new Date();
+				var distime = endDate.getTime() - date.getTime();
+				var second = distime / 1000;
+                
+//				var h = parseInt(second / 60 / 60 / 24 * 24);
+                var h=parseInt(second/60/60%24)
+				var today=parseInt(second/60/60/24);
+				var m = parseInt(second / 60 % 60);
+				var s = parseInt(second % 60);
+				if(m < 10) {
+					m = "0" + m;
+				}
+				if(h < 10) {
+					h = "0" + h;
+				}
+			
+				
+				document.getElementById('timeOver').innerHTML = "剩"+today+'天' + h + "时" + m + "分";
+            }
+		</script>
+		<script src="js/animatef.js"></script>
+		<script>
+			function scroll() {
+				if(window.pageYOffset != null) {
+					return {
+						left: Window.pageXOffset,
+						top: window.pageYOffset
+					}
+				} else if(document.compatMode === "CSS1Compat") {
+					return {
+						left: document.documentElement.scrollLeft,
+						top: document.documentElement.scrollTop
+					}
+				} else {
+					return {
+
+						left: document.body.scrollLeft,
+						top: document.body.scrollTop
+					}
+				}
+			}
+			var tuij = document.querySelector('.tuijuan')
+			var tui = tuij.offsetTop + 100;
+
+			window.onscroll = function() {
+//				console.log("scroll=" + scroll().top)
+//				console.log('tui=' + tui)
+				if(scroll().top >= tui) {
+					tuij.className = "tuijuan guding";
+				} else {
+					tuij.className = "tuijuan";
+				}
+
+			}
+			var gz = document.querySelector('.gz');
+			var tj = document.querySelector('.tj');
+			var recommend = document.querySelector('.recommend');
+			var concern = document.querySelector('.concern');
+
+			var follow = document.getElementsByClassName('follow');
+			gz.onclick = function() {
+
+				tj.style.borderBottom = "none";
+				this.style.borderBottom = "2px solid red";
+				concern.style.display = 'block';
+				recommend.style.display = 'none';
+
+			}
+			tj.onclick = function() {
+				gz.style.borderBottom = "none";
+				this.style.borderBottom = "2px solid red";
+				concern.style.display = 'none';
+				recommend.style.display = 'block';
+
+			}
+
+			for(var i = 0; i < follow.length; i++) {
+				follow[i].onclick = function(n) {
+					return function() {
+
+						concern.appendChild(follow[n].parentNode.parentNode.cloneNode(true));
+						alert('关注成功')
+						follow[n].innerHTML = "已关注";
+						follow[n].backgroundColor = "gray";
+					}
+				}(i)
+			}
+		</script>
+	</body>
+
+</html>

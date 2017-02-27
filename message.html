@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+		body{
+			color: black;
+			font-size: 16px;
+		}
+		
+			.msg_header {
+				height: 50px;
+				line-height: 50px;
+				background-color: gainsboro;
+				text-align: center;
+			}
+			.msg_content{
+				position: relative;
+				background-color: white;
+			}
+			.msg_content ul li{
+		        height: 50px;
+		     	   border-bottom: 1px solid darkgrey;
+		    
+		        text-align:left;
+		        line-height: 50px;
+		      
+		   
+		        
+			}
+			.msg_content ul{
+				list-style: none;
+				margin-left: 60px;
+			}
+			.msg_content ul li .imgLeft{
+			/*	float: left;*/
+				margin-right:3%;
+				position: absolute;
+				left: 10px;
+				
+			}
+			.msg_content ul li a{
+				color: black;
+			 
+				   /*display: block;
+				   margin-left: 30px;*/
+			}
+			.msg_content ul li a spn{
+			
+			}
+			.msg_content ul li .btnR{
+				float: right;
+				margin-top: 10px;
+			}
+			.msg_content ul li.noborder{
+				border: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="msg_header">
+			会话
+		</div>
+		<div class="msg_content">
+			<ul>
+				<li>
+					<a href="javascript:;"><img class="imgLeft" src="imgs/05_message/offcialMsg.png" alt="官方消息" />
+					<span>官方消息</span>
+					 <img class="btnR" src="imgs/05_message/btnRight .png" alt="右键"/>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;"><img class="imgLeft" img src="imgs/05_message/fan.png" alt="粉丝" />
+					<span>粉丝</span>
+					<img class="btnR" src="imgs/05_message/btnRight .png" alt="右键"/>
+					</a>
+					
+				</li>
+				<li>
+					<a href="javascript:;"><img class="imgLeft" img src="imgs/05_message/comment.png" alt="评论" />
+					<span>评论</span>
+					<img class="btnR" src="imgs/05_message/btnRight .png" alt="右键" />
+					</a>
+					
+				</li>
+				<li class="noborder">
+					<a href="javascript:;"><img class="imgLeft" src="imgs/05_message/like.png" alt="喜欢" />
+					<span>喜欢</span>
+					<img class="btnR" src="imgs/05_message/btnRight .png"  alt="右键"/>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			html,
+			body {
+				overflow-x: hidden;
+			}
+			
+			body {
+				background-color: #FAFAFA;
+				width: 100%;
+			}
+			
+			.img-introduce {
+				width: 100%;
+				height: 50px;
+				color: black;
+				font-family: "微软雅黑";
+			}
+			
+			.img-introduce p span {
+				display: block;
+				float: left;
+				width: 40px;
+				height: 20px;
+				background-color: orangered;
+				color: white;
+				border-radius: 5px;
+				margin: 5px;
+				font-family: "微软雅黑";
+				font-size: 15px;
+				text-align: center;
+			}
+			
+			.img-introduce p {
+				color: black;
+				font-family: "微软雅黑";
+				font-size: 15px;
+				float: left;
+				width: 70%;
+			}
+			
+			.buy-clock {
+				width: 20%;
+				float: right;
+				font-size: 10px;
+				text-align: center;
+			}
+			
+			.buy-price {
+				border-top: 1px solid gainsboro;
+				border-bottom: 1px solid gainsboro;
+				height: 70px;
+				position: relative;
+			}
+			
+			.buy-price p {
+				width: 43%;
+				color: #9932CC;
+				font-size: 20px;
+				font-family: "微软雅黑";
+				float: left;
+				top: 30%;
+				left: 5%;
+				position: absolute;
+				font-weight: bold;
+			}
+			
+			.buy-price p span {
+				display: inline-block;
+				font-size: 10px;
+				font-weight: 300;
+				color: rgba(0, 0, 0, 0.7)
+			}
+			
+			.buy-price p span b {
+				font-weight: 100px;
+				color: purple;
+			}
+			
+			.qipaiNum,
+			.renzheng {
+				border-bottom: 1px solid gainsboro;
+			}
+			
+			.overTime {
+				float: right;
+				width: 50%;
+				text-align: center;
+				vertical-align: middle;
+				height: 60px;
+				margin-top: 10px;
+			}
+			
+			.overTime time .s {
+				display: inline-block;
+				width: 25px;
+				height: 25px;
+				line-height: 25px;
+				text-align: center;
+				background-color: purple;
+				border-radius: 5px;
+				color: white;
+				font-size: 10px;
+				margin: 3px;
+			}
+			
+			.overTime time span {
+				margin: 0px;
+			}
+			
+			.overTime time div {
+				float: left;
+			}
+			
+			.qipaiNum ul {
+				margin-left: 1%;
+				list-style-type: none;
+				height: 70px;
+				line-height: 70px;
+			}
+			
+			.qipaiNum ul li {
+				/*display: inline-block;*/
+				float: left;
+				width: 30%;
+				height: 35px;
+				line-height: 35px;
+				font-size: 13px;
+				margin-left: 3%;
+			}
+			
+			.renzheng ul {
+				list-style-type: none;
+				height: 50px;
+				margin-left: 4%;
+			}
+			
+			.renzheng ul li {
+				float: left;
+				width: 25%;
+				line-height: 50px;
+			}
+			
+			.saleRecoder {
+				height: 80px;
+			}
+			
+			.saleRecoder ul {
+				list-style-type: none;
+				
+			}
+			
+			.saleRecoder ul li {
+				border: 1px solid #C0C0C0;
+				width: 31%;
+				height: 50px;
+				float: left;
+				margin-left: 2%;
+			}
+			
+			.saleRecoder ul li a {
+				font-size: 10px;
+			}
+			
+			.saleRecoder ul li span {
+				float: left;
+				display: inline-block;
+				width: 20px;
+				text-align: center;
+				height: 40px;
+				background-color: purple;
+				color: white;
+				margin: 5px;
+				font-size: 17px;
+			}
+			
+			.saleRecoder ul li .taotai {
+				background-color: rgba(0, 0, 0, 0.8);
+			}
+			
+			.bag {
+				background-color: gainsboro;
+				height: 25px;
+			}
+			
+			.jigou {
+				height: 200px;
+				/*	background-color: #C0C0C0;*/
+			}
+			
+			.jigou .guanzhu {
+				width: 100%;
+				margin-left: 1%;
+				padding-top: 10px;
+				height: 120px;
+			}
+			
+			.jigou img {
+				float: left;
+			}
+			
+			.jigou span {
+				display: block;
+			}
+			
+			.jigou .zhuanchang {
+				font-size: 15px;
+				font-family: "微软雅黑";
+				width: 62%;
+				float: left;
+				margin-left: 1%;
+				margin-top: 2%;
+				font-size: 13px;
+			}
+			
+			.jigou .gz {
+				float: right;
+				height: 30px;
+				line-height: 30px;
+				width: 15%;
+				text-align: center;
+				color: #CCCCCC;
+				margin-right: 3%;
+				border: 1px solid #CCCCCC;
+				border-radius: 5px;
+				margin-top: 4%;
+			}
+			
+			.jigou .gz a {
+				color: #CCCCCC;
+			}
+			
+			.look {
+				width: 100%;
+				height: 130px;
+			}
+			
+			.look ul {
+				list-style-type: none;
+				margin-left: 11%;
+			}
+			
+			.look ul li {
+				width: 33%;
+				float: left;
+				font-size: 15px;
+				font-family: "微软雅黑";
+			}
+			
+			.look span {
+				display: inline-block;
+				width: 45%;
+				border: 1px solid #D3D3D3;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				margin-left: 3%;
+				border-radius: 5px;
+				margin-top: 5%;
+			}
+			
+			.drag {
+				width: 100%;
+				height: 80px;
+				background-color: gainsboro;
+				line-height: 80px;
+				text-align: center;
+				margin-top: 10%;
+				margin-bottom: 15%;
+				font-family: "微软雅黑";
+				color: rgba(0, 0, 0, 0.5);
+			}
+		
+			.detail .nav ul{
+				list-style-type: none;
+			}
+			.detail .nav li{
+				float: left;
+				width: 33%;
+				text-align: center;
+				font-family: "微软雅黑";
+			}
+			.gundong{
+				position: relative;
+				top: 0px;
+			}
+			.btn{
+				height: 50px;
+				width: 100%;
+				position: fixed;
+				
+				
+				z-index: 10;
+				padding: 15px;
+			  top: 0px;
+			 
+			}
+			
+			.btn .imgShare{
+				float: right;
+				margin-right: 10px;
+			
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="btn">
+						<a  href="index.html">
+							<img class="back" src="imgs/01_index_buy/back.png" width="24px"/>
+						</a>
+						<a  href="javascript:;"><img class="imgShare" src="imgs/01_index_buy/share.png" width="24px"/></a>
+							
+					</div>
+			<div id="tabbar" class="mui-control-content mui-active gundong">
+				<div class="mui-slider">
+					
+					<div class="mui-slider-group mui-slider-loop">
+						<div class="mui-slider-item mui-slider-item-dulplicate">
+							<a href="javascript:;"><img src="imgs/01_index/02_slider/shouzhuo_3.JPG"></a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="javascript:;">
+								<img src="imgs/01_index/02_slider/details_01.jpg" />
+							</a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="javascript:;">
+								<img src="imgs/01_index/02_slider/index_classify_3.jpg" />
+							</a>
+						</div>
+						<div class="mui-slider-item">
+							<img src="imgs/01_index/02_slider/qingbaimei_1.JPG" />
+						</div>
+						<div class="mui-slider-item">
+							<a href="javascript:;">
+								<img src="imgs/01_index/02_slider/shouzhuo_3.JPG" />
+							</a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="javascript:;">
+								<img src="imgs/01_index/02_slider/index_classify_3.jpg" />
+							</a>
+						</div>
+						<div class="mui-slider-item mui-slider-item-dulplicate">
+							<a href="javascript:;">
+								<img src="imgs/01_index/02_slider/details_01.jpg" />
+							</a>
+						</div>
+					</div>
+					<div class="mui-slider-indicator">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+					</div>
+				</div>
+				<div class="head">
+					
+					<div class="img-introduce">
+						<p><span>包邮</span>石中新贵 老挝石 小桥流水人家摆件 收藏观赏佳品</p>
+						<div class="buy-clock"><img src="imgs/01_index/05_currentSale/clock.jpg" /><br/>设置提醒</div>
+					</div>
+				</div>
+				<div class="buy-price">
+					<p>￥8400<span>(共<b>25</b>次出价)</span></p>
+					<div class="overTime">
+						距结束仅剩<br />
+						<time>
+				<span class="s">10</span><span>:</span>
+					<span class="s">10</span><span>:</span>
+					<span class="s">10</span><span>:</span>
+					<span class="s">10</span>
+					
+				</time>
+					</div>
+				</div>
+				<div class="qipaiNum">
+					<ul>
+						<li>起拍价:￥100</li>
+						<li>加价幅度:￥100</li>
+						<li>保证金:￥0</li>
+						<li>围观度:258次</li>
+						<li>延时周期5分/次</li>
+						<li>保留价:无保留价</li>
+					</ul>
+
+				</div>
+				<div class="renzheng">
+					<ul>
+						<li><img src="" alt="" />7天退换</li>
+						<li><img src="" alt="" />先行赔付</li>
+						<li><img src="" alt="" />认证商家</li>
+						<li><img src="" alt="" />正品保证</li>
+					</ul>
+				</div>
+				<div class="saleRecoder">
+					<h2 style="font-size: 15px;font-weight: 300;margin-left: 2%;">出价记录(12)</h4>
+			<ul>
+				<li>
+					<a href=""><span>领先</span>132*****507<br/><strong>￥8400</strong></a>
+				</li>
+				<li>
+					<a href=""><span class="taotai">淘汰</span>132*****507<br/><strong>￥8400</strong></a>
+				</li>
+				<li>
+					<a href=""><span class="taotai" >淘汰</span>132*****507<br/><strong>￥8400</strong></a>
+				</li>
+			</ul>
+		</div>
+		<div class="bag"></div>
+		<div class="jigou">
+			<div class="guanzhu">
+				<img src="imgs/01_index/02_slider/qingbaimei_1.JPG" width="60px" />
+				<div class="zhuanchang">
+					<span>机构:&nbsp;集藏斋</span>
+					<span>专场:&nbsp;瑰丽奇石 精雕细琢摆件专场</span>
+				
+				</div>
+					<div class="gz"><a  href="javascript:;">+关注</a></div>
+			</div>
+
+			<div class="look">
+				<ul>
+					<li><strong>107</strong><br/>专场</li>
+					<li><strong>2492</strong><br/>拍品</li>
+					<li><strong>63708</strong><br/>总围观数</li>
+				</ul>
+				<span>进入专场</span>
+				<span><img src="" alt=""/>进店逛逛</span>
+			</div>
+		</div>
+           <div class="drag">
+        	继续拖动，查看图文详情
+           </div>
+        
+           <div class="detail">
+           	 <div class="nav">
+           	  <ul>
+           	  	<li>拍品详情</li>
+           	  	<li>服务保障</li>
+           	  	<li>相关推荐</li>
+           	  </ul>
+           	  </div>
+           	  <p>山东福利大数据分类度搜打破凡事都放假是的咯手动阀皮肤科品味品位为司法局欧文额外
+           	  而非阿尔卡佛饿哦陪陪我我我人陪我分配我 都是乏味脾胃 冻死了附近我饿哦无日期速度快附件为二位五
+           	  是热熔胶哦哦婆婆耳热OK哦肉片呸呸呸我拍拍网偶尔我怕我怕我怕
+           	  </p>
+           	  <img src="imgs/04_shop/1.jpg" width="100%"/>
+           	  <img src="imgs/04_shop/1.jpg" width="100%"/>
+           	  <img src="imgs/04_shop/1.jpg" width="100%"/>
+           </div>
+        </div>
+       </div>
+       <nav class="mui-bar mui-bar-tab">
+				<a class="mui-tab-item mui-active" href="#tabbar" style="background-color: black;color: white;">
+					
+					<span class="mui-tab-label">客服</span>
+				</a>
+				<a class="mui-tab-item" href="#tabbar-with-chat" style="background-color: purple;color: white;">
+					
+					<span class="mui-tab-label">出价</span>
+				</a>
+			
+			</nav>
+
+		<script src="js/mui.min.js"></script>
+		<script src="js/scroll.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script>
+			$(function(){
+               $(window).scroll(function(){
+               	console.log($(window).scrollTop());
+//             	 if($(window).scrollTop() >= 430 && $(window).scrollTop() <= 450){
+//          
+//               	$('html,body').animate({scrollTop:'1100px'},500)
+//               }
+                	 if($(window).scrollTop() >= 10){
+            
+                 	$('.btn').css({'backgroundColor':'white'});
+                 	$('.back').attr('src','imgs/01_index_buy/back2.png');
+                 	$('.imgShare').attr('src','imgs/01_index_buy/share2.png');
+                 }else{
+                 	$('.btn').fadeIn('slow').css({'backgroundColor':'transparent'});
+                 	$('.back').attr('src','imgs/01_index_buy/back.png');
+                 	$('.imgShare').attr('src','imgs/01_index_buy/share.png');
+                 }
+
+
+               })
+                
+			})
+		</script>
+
+
+
+	</body>
+
+</html>

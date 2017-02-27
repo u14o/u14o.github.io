@@ -1,0 +1,241 @@
+ body,html,ul,li,ol,tr,td,p{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				color: black;
+				font-family:'sans-serif';
+			}
+.my-head{
+				width: 100%;
+				height: 220px;
+				background-color: #EC971F;
+			}
+		
+			
+			.setup{
+				width: 100%;
+				height: 40px;
+				padding-top: 3%;
+				padding-left: 3%;
+			}
+			.setup img:nth-child(2){
+				float: right;
+				margin-right: 3%;
+			}
+			.person{
+				width: 100%;
+				height: 60px;
+				margin-top: 5%;
+				padding-left: 3%;
+				color: white;
+				box-sizing: border-box;
+			}
+			.person img{
+				float: left;
+				
+			}
+			.person p{
+				padding-top: 5%;
+					color: white;
+					float: left;
+					font-family: "微软雅黑";
+			}
+			.person a{
+				float: right;
+				color: white;
+				margin-right: 5%;
+				padding-top: 7%;
+				font-family: "微软雅黑";
+			}
+			.fan{
+				margin-top: 30px;
+				margin-bottom: 20px;
+				height: 50px;
+				
+			}
+		
+			.fan ul li{
+				list-style-type: none;
+				height: 40px;
+				text-align: center;
+				border-right: 1px solid #FFFFFF;
+			
+				float: left;
+				width: 33%;
+			
+			}
+			.fan ul li a{
+					font-family: "微软雅黑";
+					color: #FFFFFF;
+			}
+			.fan ul li a span{
+				display: block;
+				font-family: "微软雅黑";
+					color: #FFFFFF;
+					height: 25px;
+			}
+			.fan .noborder{
+					border: none;
+				}
+			
+			.allOrder{
+				width: 100%;
+				height: 150px;
+				background-color:#F2F2F2;
+	
+			}
+		
+			
+				.allOrder p{
+					font-family: "微软雅黑";
+		         
+				}
+		 .allOrder .order{
+					height: 40px;
+					padding: 1%;
+					border-bottom: 1px solid #DCDCDC;
+				}
+			.allOrder .order img{
+					float: left;
+				}
+			.allOrder .order p{
+					padding-top: 5px;
+					float: left;
+				}
+				.allOrder .order .btnR{
+					float: right;
+
+				}
+				.allOrder .pay ul{
+					list-style-type: none;
+					margin-top: 3%;
+					height: 70px;
+					padding-left: 0px;
+					
+				}
+				.allOrder .pay ul li{
+					float: left;
+					width: 20%;
+						text-align: center;
+				}
+				
+				.allOrder img{
+					width: 30px;
+					margin: 0px auto;
+				}
+				.allOrder .pay ul li a{
+					color: black;
+					font-size: 12px;
+					font-family: "微软雅黑";
+				
+				}
+				.allOrder .bg{
+					background-color: #C0C0C0;
+					height:20px;
+				}
+				.myWallet{
+				width: 100%;
+				height: auto;
+				background-color: #F2F2F2;
+			}
+			.myWallet .wallet img{
+				float: left;
+			}
+			.myWallet .wallet p{
+				padding: 1%;
+			}
+			/*.myWallet .wallet{
+					height: 40px;
+					padding: 1%;
+					border-bottom: 1px solid #DCDCDC;
+				}*/
+				.wallet,.foot,.recoder,.address,.onlineChat,.customerOnline{
+					height: 40px;
+					padding: 1%;
+					border-bottom: 1px solid #DCDCDC;
+				}
+			
+				.customerOnline{
+				
+					margin-bottom: 50px;
+				}
+				/*.myWallet .accout ul{
+					list-style-type: none;
+					height: 70px;
+					border-bottom: 1px solid #C0C0C0;
+			       padding: 5%;
+			       padding-left: 0px;
+			    
+					
+				}*/
+				.myWallet .accout ul{
+					list-style-type: none;
+					height: 70px;
+					border-bottom: 1px solid #C0C0C0;
+					padding-top: 3%;
+				}
+				.myWallet .accout ul li{
+					width: 33%;
+					float: left;
+					height: 70px;
+					/*line-height: 20px;*/
+					text-align: center;
+					position: relative;
+				
+					
+				}
+				.myWallet .accout ul li a{
+					color: black;
+					font-family: "微软雅黑";
+				}
+				.myWallet .accout ul li p{
+					text-align: center;
+					color: red;
+					position: absolute;
+				
+					width: 100%;
+					font-size: 20px;
+					font-family: "微软雅黑";
+				}
+				/*.myWallet .accout ul li{
+					float: left;
+					width: 33%;
+					height: 50px;
+					text-align: center;
+					position: relative;
+				}
+				.myWallet .accout ul li a{
+					color: black;
+					font-family: "微软雅黑";
+					display: block;
+				}
+				.myWallet .accout ul li a p{
+			        
+			        text-align: center;
+			        color: red;
+			        position: absolute;
+			  
+			        width: 100%;
+			        font-size: 20px;
+				}*/
+				.myshoping,.mysale,.recoder,.dongtai{
+					height: 40px;
+					border-bottom: 1px solid #C0C0C0;
+						padding: 1%;
+				}
+				.myWallet  img{
+					float: left;
+					width: 30px;
+				}
+				.myWallet p{
+					padding: 1%;
+					float: left;
+				}
+				.myWallet .btnR{
+					float: right;
+				}
+				.myWallet .myshoping-bg{
+					height: 20px;
+					background-color: #C0C0C0;
+				}

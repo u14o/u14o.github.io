@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			body,
+			html {
+				height: 100%;
+			}
+			
+			.header {
+				overflow: hidden;
+				border-bottom: 1px solid gainsboro;
+			}
+			
+			.header .imgSort {
+				float: left;
+				margin-top: 10px;
+			}
+			
+			.header input {
+				background-color: white;
+				background: url(imgs/01_index_sort/search.png) no-repeat 10px;
+				border: 1px solid gainsboro;
+				float: left;
+				width: 80%;
+				padding-right: 160px;
+				margin-top: 10px;
+				margin-left: 10px;
+			}
+			
+			.header .cancel {
+				text-align: center;
+				margin-top: 17px;
+			}
+			
+			.listLeft {
+				background-color: lightgray;
+				width: 100px;
+				height: 100%;
+				float: left;
+			}
+			
+			
+			.listLeft ul li {
+				list-style:none;
+				width: 100px;
+				background-color: lightgray;
+				border-bottom: 2px solid white;
+				text-align: center;
+				height: 40px;
+				line-height: 40px;
+				float: left;
+			}
+			.imgRight{
+				height: 100%;
+				background-color: white;
+			}
+			.imgRight ul li{
+				list-style: none;
+				float: left;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+
+			<input type="search" placeholder="搜索商品" />
+			<div class="cancel">取消</div>
+
+		</div>
+		<div class="listLeft">
+			<ul>
+				<li>玉翠珠宝</li>
+				<li>手工艺品</li>
+				<li>文玩收藏</li>
+				<li>紫砂陶瓷</li>
+				<li>字画雕塑</li>
+				<li>国石奇石</li>
+				<li>茶道香道</li>
+				<li>其他特色</li>
+			</ul>
+		</div>
+		<div class="imgRight">
+			<ul>
+				<li>
+					<a href=""><img src="imgs/01_index_sort/hetianyu.png" alt="" />
+						<span>和田玉</span>
+					</a>
+
+				</li>
+				<li>
+					<a href=""><img src="imgs/01_index_sort/feicui.png" alt="" /><span>翡翠</span></a>
+				</li>
+				<li>
+					<a href=""><img src="imgs/01_index_sort/huanglongyu.png" alt="" /><span>黄龙玉</span></a>
+				</li>
+			</ul>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+
+	</body>
+
+</html>

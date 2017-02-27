@@ -1,0 +1,49 @@
+		.flex-container {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-flex-flow: row wrap;
+				justify-content: space-between;
+				text-align: center;
+		
+				width:100%;
+    			height: 60px;
+    				background-color: #FAFAFA;
+    				position: fixed;
+    			
+    				bottom: 0px;
+    				left: 0px;
+			}
+			.mui-content-padded {
+				padding: 10px;
+				
+			}
+			.mui-content-padded a {
+				margin: 3px;
+				width: 60px;
+				height: 60px;
+				display: inline-block;
+				text-align: center;
+		
+				background-clip: padding-box;
+			}
+			.mui-content-padded a .mui-icon {
+				margin-top: 4px;
+		
+			}
+			.mui-spinner,
+			.mui-spinner-white {
+				margin-top: 12px
+			}
+			.active .mui-spinner-indicator {
+				background: #007AFF;
+			}
+			.mui-content a {
+				color: #8F8F94;
+				font-size: 12px;
+			
+			
+			}
+			.mui-content a.active {
+				color: #007aff;
+			}

@@ -1,0 +1,97 @@
+{
+	"index.html": {
+		"resources": [
+			"imgs/slider-img/111.jpg",
+			"imgs/slider-img/details_01.jpg",
+			"js/mui.min.js",
+			"imgs/slider-img/qingbaimei_1.JPG",
+			"imgs/slider-img/shouzhuo_3.JPG",
+			"css/mui.min.css",
+			"imgs/slider-img/index_classify_3.jpg",
+			"imgs/01_index/02_slider/shouzhuo_3.JPG",
+			"imgs/01_index/02_slider/qingbaimei_1.JPG",
+			"imgs/01_index/05_currentSale/11.jpg",
+			"imgs/01_index/04_hotSale/22.jpg",
+			"imgs/01_index/03_saleList/temai.jpg",
+			"imgs/01_index/05_currentSale/qingbaimei_1.JPG",
+			"imgs/01_index/05_currentSale/chabei_2.JPG",
+			"imgs/01_index/04_hotSale/1.jpg",
+			"imgs/01_index/01_header/search.jpg",
+			"imgs/01_index/05_currentSale/3.jpg",
+			"imgs/01_index/05_currentSale/paimai.jpg",
+			"imgs/01_index/03_saleList/fuli.jpg",
+			"imgs/01_index/04_hotSale/2.jpg",
+			"imgs/01_index/04_hotSale/11.jpg",
+			"imgs/01_index/01_header/list.jpg",
+			"imgs/01_index/04_hotSale/111.jpg",
+			"imgs/01_index/02_slider/details_01.jpg",
+			"imgs/01_index/03_saleList/paimai.jpg",
+			"imgs/01_index/02_slider/index_classify_3.jpg",
+			"imgs/01_index/03_saleList/yuzhan.jpg",
+			"imgs/01_index/05_currentSale/1.jpg",
+			"imgs/01_index/01_header/shoping.jpg",
+			"imgs/01_index/05_currentSale/clock.jpg",
+			"imgs/02_my/btnRight .png",
+			"imgs/04_shop/collect.png",
+			"imgs/02_my/getGoods.png",
+			"imgs/04_shop/tea.png",
+			"imgs/02_my/my.png",
+			"imgs/02_my/daipj.png",
+			"imgs/02_my/address.png",
+			"imgs/04_shop/purple.png",
+			"imgs/04_shop/details_01.jpg",
+			"fonts/mui.ttf",
+			"imgs/04_shop/jewellery.png",
+			"imgs/04_shop/stone.png",
+			"imgs/02_my/foot.png",
+			"imgs/02_my/shangchen.png",
+			"imgs/04_shop/draw.png",
+			"imgs/02_my/auction.png",
+			"imgs/02_my/allOrder.png",
+			"imgs/02_my/setUp.png",
+			"imgs/04_shop/other.png",
+			"imgs/02_my/guanzhu.png",
+			"imgs/02_my/dialog.png",
+			"imgs/02_my/online.png",
+			"imgs/02_my/sendGoods.png",
+			"imgs/04_shop/handCraft.png",
+			"js/animatef.js",
+			"imgs/02_my/recorder.png",
+			"imgs/02_my/daifk.png",
+			"imgs/02_my/myWallet.png",
+			"imgs/02_my/dongtai.png",
+			"imgs/03_find/see.png",
+			"imgs/03_find/fenxiang.png",
+			"imgs/03_find/pinglun.png",
+			"imgs/03_find/xihuan.png",
+			"buy.html",
+			"auction.html"
+		],
+		"refer": [
+			"buy.html",
+			"auction.html"
+		]
+	},
+	"buy.html": {
+		"resources": [
+			"js/scroll.js",
+			"imgs/04_shop/1.jpg",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"auction.html": {
+		"resources": [
+			"imgs/01_index_auction/index_classify_3.jpg",
+			"imgs/01_index_auction/返回.png",
+			"imgs/01_index_auction/11.jpg",
+			"imgs/01_index/04_hotSale/222.jpg",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	}
+}
